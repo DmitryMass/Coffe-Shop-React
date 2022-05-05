@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer';
 import HeaderMenu from '../MenuHeader';
 
 const forPleasure = {
@@ -9,14 +10,17 @@ const forPleasure = {
 };
 const MyPleasure = () => {
   return (
-    <header className="header" style={forPleasure}>
-      <div className="container__header">
-        <HeaderMenu />
-        <div className="header__title">
-          <h1 className="h1">For your pleasure</h1>
+    <div className="wrapper">
+      <header className="header" style={forPleasure}>
+        <div className="container__header">
+          <HeaderMenu />
+          <div className="header__title">
+            <h1 className="h1">For your pleasure</h1>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <Footer />
+    </div>
   );
 };
 
