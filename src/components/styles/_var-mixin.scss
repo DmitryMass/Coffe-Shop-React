@@ -21,6 +21,9 @@
   &__header {
     @include container(1100px);
   }
+  &__coffe {
+    @include container(865px);
+  }
   &__content {
     @include container(800px);
   }

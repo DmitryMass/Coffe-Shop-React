@@ -9,18 +9,20 @@ import './styles/main.scss';
 
 const Main = () => {
   return (
-    <main className="main">
-      <div className="container__about">
-        <div className="main__about">
-          <About>About Us</About>
-          <div className="main__info">
-            <p className="main__txt">{mainAboutData.paragpraphOne}</p> <br />
-            <p className="main__txt">{mainAboutData.paragpraphTwo}</p>
+    <>
+      <main className="main">
+        <div className="container__about">
+          <div className="main__about">
+            <About>About Us</About>
+            <div className="main__info">
+              <p className="main__txt">{mainAboutData.paragpraphOne}</p> <br />
+              <p className="main__txt">{mainAboutData.paragpraphTwo}</p>
+            </div>
           </div>
         </div>
-        <SectionBestCoffe />
-      </div>
-    </main>
+      </main>
+      <SectionBestCoffe />
+    </>
   );
 };
 

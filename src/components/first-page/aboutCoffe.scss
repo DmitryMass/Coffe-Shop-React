@@ -1,0 +1,38 @@
+@import '../styles/var-mixin';
+.section {
+  padding: 85px 0 110px;
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &__bestCoffe {
+    @include flex-container(space-between);
+    &-item {
+      padding: 20px;
+      width: 220px;
+      height: 240px;
+      @include flex-container(space-between);
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.65);
+      border-radius: 8px;
+      &:hover {
+        box-shadow: 0px 0px 10px $black;
+      }
+    }
+  }
+}
+
+//
+.coffe {
+  &__description {
+    @include listStyles($fs-14, $lh-20, $fw-normal, $black);
+    margin-bottom: 10px;
+  }
+  &__price {
+    @include listStyles($fs-14, $lh-20, $fw-bold, $black);
+    text-align: right;
+  }
+  &__img {
+    text-align: center;
+  }
+}
