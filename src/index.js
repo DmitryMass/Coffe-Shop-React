@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //
 import App from './App';
+import CoffeItem from './components/About/AboutItem';
 import OurCoffe from './components/second-page/OurCoffe';
 import MyPleasure from './components/third-page/MyPleasure';
 //
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <Route path="/" element={<App />} />
         <Route path="/ourcoffe" element={<OurCoffe />} />
         <Route path="/yourpleasure" element={<MyPleasure />} />
+        <Route path=":bestCoffe" element={<CoffeItem />} />
       </Routes>
     </BrowserRouter>
   );
