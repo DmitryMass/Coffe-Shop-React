@@ -1,0 +1,13 @@
+@import './var-mixin';
+.main {
+  padding: 95px 0;
+  &__about {
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 45px;
+  }
+  &__txt {
+    @include listStyles($fs-14, $lh-20, $fw-normal, $black);
+  }
+}
