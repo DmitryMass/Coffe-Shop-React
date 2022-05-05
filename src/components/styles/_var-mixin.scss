@@ -1,0 +1,48 @@
+@mixin container($width) {
+  max-width: $width;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+//
+@mixin listStyles($fs, $lh, $fw, $color) {
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $color;
+}
+//
+@mixin flex-container($just-cont) {
+  display: flex;
+  align-items: center;
+  justify-content: $just-cont;
+}
+.container {
+  &__header {
+    @include container(1100px);
+  }
+  &__content {
+    @include container(800px);
+  }
+}
+
+// colors
+$white: #ffff;
+$black: rgb(0, 0, 0);
+// fonts
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-md: 24px;
+$fs-lg: 40px;
+// lh
+$lh-17: 17px;
+$lh-20: 20px;
+$lh-35: 35px;
+$lh-58: 58px;
+// fw
+$fw-normal: 400;
+$fw-bold: 700;
+// selectors
+.h1 {
+  @include listStyles($fs-lg, $lh-58, $fw-bold, $white);
+}

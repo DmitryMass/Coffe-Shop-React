@@ -1,0 +1,57 @@
+@import '../styles/var-mixin';
+//
+.header {
+  padding-top: 30px;
+  //
+  &__top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &-item {
+      & > a {
+        padding: 5px 10px;
+        @include listStyles($fs-12, $lh-17, $fw-normal, $white);
+        &:hover {
+          text-shadow: 0px 0px 6px $white;
+        }
+      }
+    }
+  }
+
+  //
+  &__main {
+    padding: 110px 0px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    & > h1 {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    padding: 60px 0px 80px;
+    text-align: center;
+  }
+  &__more {
+    margin-top: 20px;
+    padding: 5px 42px;
+    border: 1px solid $white;
+    border-radius: 3px;
+    @include listStyles($fs-14, $lh-20, $fw-bold, $white);
+  }
+  &__subtitle {
+    @include listStyles($fs-md, $lh-35, $fw-bold, $white);
+    margin-top: 35px;
+  }
+}
+
+//
+//
