@@ -4,6 +4,7 @@ import HeaderMenu from '../MenuHeader';
 import MainOurCoffe from '../second-page/MainOurCoffe';
 //
 import cup from '../../assets/images/cupCoffe.png';
+import AllCoffe from '../AllCoffe';
 //
 
 const forPleasure = {
@@ -24,7 +25,7 @@ const MyPleasure = () => {
           </div>
         </div>
       </header>
-      <MainOurCoffe cupCoffe={cup}>
+      <MainOurCoffe cupCoffe={cup} aboutGoods="About our goods">
         Extremity sweetness difficult behaviour he of. On disposal of as
         landlord horrible. <br /> <br />
         Afraid at highly months do things on at. Situation recommend objection
@@ -32,6 +33,7 @@ const MyPleasure = () => {
         an. Last ask him cold feel met spot shy want. Children me laughing we
         prospect answered followed. At it went is song that held help face.
       </MainOurCoffe>
+      <AllCoffe />
       <Footer />
     </div>
   );

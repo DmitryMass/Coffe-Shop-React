@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <Route path="/ourcoffe" element={<OurCoffe />} />
         <Route path="/yourpleasure" element={<MyPleasure />} />
         <Route path=":bestCoffe" element={<CoffeItem />} />
-        <Route path=":otherCoffe" element={<OtherCoffe />} />
+        <Route path="/ourcoffe/:allCoffe" element={<OtherCoffe />} />
+        <Route path="/yourpleasure/:allCoffe" element={<OtherCoffe />} />
       </Routes>
     </BrowserRouter>
   );

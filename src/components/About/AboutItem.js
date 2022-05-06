@@ -12,7 +12,6 @@ const CoffeItem = () => {
   const articles = bestCoffeData.filter(
     (coffeItem) => coffeItem.link === params.bestCoffe
   )[0];
-
   if (!articles) return <div>404 Not Found</div>;
 
   return (

@@ -5,12 +5,14 @@ import MainOurCoffe from './MainOurCoffe';
 //
 //
 import girldWithCoffe from '../../assets/images/aboutBeansGirl.jpg';
+import FilterPanel from './FilterPanel';
+import AllCoffe from '../AllCoffe';
 
 const OurCoffe = () => {
   return (
     <div className="wrapper">
       <EachCoffeHeader />
-      <MainOurCoffe img={girldWithCoffe}>
+      <MainOurCoffe img={girldWithCoffe} aboutBeans="About our beans">
         Extremity sweetness difficult behaviour he of. On disposal of as
         landlord horrible. <br /> <br />
         Afraid at highly months do things on at. Situation recommend objection
@@ -18,6 +20,8 @@ const OurCoffe = () => {
         an. Last ask him cold feel met spot shy want. Children me laughing we
         prospect answered followed. At it went is song that held help face.
       </MainOurCoffe>
+      <FilterPanel />
+      <AllCoffe />
       <Footer />
     </div>
   );

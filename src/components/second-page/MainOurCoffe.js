@@ -4,7 +4,7 @@ import About from '../About/About';
 // import '../styles/main.scss';
 //
 
-const MainOurCoffe = ({ children, img, cupCoffe }) => {
+const MainOurCoffe = ({ children, img, cupCoffe, aboutBeans, aboutGoods }) => {
   return (
     <>
       <main className="main main__second">
@@ -17,7 +17,7 @@ const MainOurCoffe = ({ children, img, cupCoffe }) => {
               />
             </div>
             <div className="main__information">
-              <About>About our beans</About>
+              <About>{aboutBeans ? aboutBeans : aboutGoods}</About>
               <div className="main__description">
                 <p className="main__txt">{children}</p>
               </div>

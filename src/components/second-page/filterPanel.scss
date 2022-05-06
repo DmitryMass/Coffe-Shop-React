@@ -1,0 +1,37 @@
+@import '../styles/var-mixin';
+.filter {
+  padding-bottom: 60px;
+  &__panel {
+    @include flex-container(space-around);
+  }
+  &__search {
+    @include flex-container(center);
+    gap: 15px;
+  }
+  &__btn {
+    @include flex-container(center);
+    & > span {
+      cursor: pointer;
+      padding: 7px 20px;
+      @include listStyles($fs-12, $lh-17, $fw-normal, $black);
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+      margin: 0 5px;
+      border-radius: 3px;
+    }
+  }
+  &__hint {
+    margin-right: 35px;
+  }
+  &__input {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border: none;
+    padding: 5px 0px;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    &::placeholder {
+      @include listStyles($fs-12, $lh-17, $fw-normal, $black);
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+  }
+}
