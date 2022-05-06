@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //
 import App from './App';
 import CoffeItem from './components/About/AboutItem';
+import OtherCoffe from './components/second-page/OtherCoffe';
 import OurCoffe from './components/second-page/OurCoffe';
 import MyPleasure from './components/third-page/MyPleasure';
 //
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <Route path="/ourcoffe" element={<OurCoffe />} />
         <Route path="/yourpleasure" element={<MyPleasure />} />
         <Route path=":bestCoffe" element={<CoffeItem />} />
+        <Route path=":otherCoffe" element={<OtherCoffe />} />
       </Routes>
     </BrowserRouter>
   );

@@ -11,3 +11,34 @@
     @include listStyles($fs-14, $lh-20, $fw-normal, $black);
   }
 }
+// Our Coffe Beans
+.main {
+  &__second {
+    padding-bottom: 60px;
+  }
+  &__beans {
+    @include flex-container(space-around);
+    position: relative;
+    padding-bottom: 60px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30%;
+      height: 2px;
+      bottom: 0;
+      background-color: $black;
+    }
+  }
+  &__information {
+    max-width: 350px;
+    text-align: center;
+    & > .main__title {
+      margin-bottom: 20px;
+    }
+  }
+  &__img > img {
+    max-width: 100%;
+    filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+  }
+}

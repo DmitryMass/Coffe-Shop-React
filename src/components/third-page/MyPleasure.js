@@ -1,6 +1,10 @@
 import React from 'react';
 import Footer from '../Footer';
 import HeaderMenu from '../MenuHeader';
+import MainOurCoffe from '../second-page/MainOurCoffe';
+//
+import cup from '../../assets/images/cupCoffe.png';
+//
 
 const forPleasure = {
   backgroundImage: 'url(../../assets/images/forPleasureBgc.png',
@@ -8,6 +12,7 @@ const forPleasure = {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
 };
+//
 const MyPleasure = () => {
   return (
     <div className="wrapper">
@@ -19,6 +24,14 @@ const MyPleasure = () => {
           </div>
         </div>
       </header>
+      <MainOurCoffe cupCoffe={cup}>
+        Extremity sweetness difficult behaviour he of. On disposal of as
+        landlord horrible. <br /> <br />
+        Afraid at highly months do things on at. Situation recommend objection
+        do intention so questions. As greatly removed calling pleased improve
+        an. Last ask him cold feel met spot shy want. Children me laughing we
+        prospect answered followed. At it went is song that held help face.
+      </MainOurCoffe>
       <Footer />
     </div>
   );
