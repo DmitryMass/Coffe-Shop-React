@@ -7,8 +7,21 @@ import MainOurCoffe from './MainOurCoffe';
 import girldWithCoffe from '../../assets/images/aboutBeansGirl.jpg';
 import FilterPanel from './FilterPanel';
 import AllCoffe from '../AllCoffe';
+//
+import { useState } from 'react';
+import { otherCoffe } from '../OtherData';
 
 const OurCoffe = () => {
+  const [type, setType] = useState(otherCoffe);
+  const filterCoffe = (status) => {
+    if (status === 'all') {
+      setType(otherCoffe);
+    } else {
+      let newCoffe = [...otherCoffe].filter((item) => item.country === status);
+      setType(newCoffe);
+    }
+  };
+
   return (
     <div className="wrapper">
       <EachCoffeHeader />
@@ -20,8 +33,8 @@ const OurCoffe = () => {
         an. Last ask him cold feel met spot shy want. Children me laughing we
         prospect answered followed. At it went is song that held help face.
       </MainOurCoffe>
-      <FilterPanel />
-      <AllCoffe />
+      <FilterPanel type={type} filterCoffe={filterCoffe} />
+      <AllCoffe type={type} />
       <Footer />
     </div>
   );

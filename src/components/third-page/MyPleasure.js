@@ -6,6 +6,10 @@ import MainOurCoffe from '../second-page/MainOurCoffe';
 import cup from '../../assets/images/cupCoffe.png';
 import AllCoffe from '../AllCoffe';
 //
+import { otherCoffe } from '../OtherData';
+//
+import { useState } from 'react';
+//
 
 const forPleasure = {
   backgroundImage: 'url(../../assets/images/forPleasureBgc.png',
@@ -15,6 +19,8 @@ const forPleasure = {
 };
 //
 const MyPleasure = () => {
+  const [type, setType] = useState(otherCoffe);
+
   return (
     <div className="wrapper">
       <header className="header" style={forPleasure}>
@@ -33,7 +39,7 @@ const MyPleasure = () => {
         an. Last ask him cold feel met spot shy want. Children me laughing we
         prospect answered followed. At it went is song that held help face.
       </MainOurCoffe>
-      <AllCoffe />
+      <AllCoffe type={type} />
       <Footer />
     </div>
   );

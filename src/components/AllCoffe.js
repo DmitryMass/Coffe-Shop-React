@@ -7,16 +7,17 @@ import './second-page/OtherCoffe.scss';
 //
 //
 
-const AllCoffe = () => {
+const AllCoffe = ({ type }) => {
   return (
     <section className="section__allCoffe">
       <div className="container__content flex__allCoffe">
-        {otherCoffe.map((eachCoffe) => {
+        {type.map((eachCoffe) => {
           return (
             <Link
               to={eachCoffe.link}
               key={eachCoffe.link}
               className="section__allCoffe-item"
+              type={eachCoffe.country}
             >
               <div className="allCoffe__img">
                 <img src={eachCoffe.image} alt={eachCoffe.description} />
