@@ -13,6 +13,8 @@ import { otherCoffe } from '../OtherData';
 
 const OurCoffe = () => {
   const [type, setType] = useState(otherCoffe);
+  const [value, setValue] = useState('');
+  // Filter Btn
   const filterCoffe = (status) => {
     if (status === 'all') {
       setType(otherCoffe);
@@ -21,6 +23,10 @@ const OurCoffe = () => {
       setType(newCoffe);
     }
   };
+  //  Search panel
+  const filterNameOfCoffe = type.filter((item) =>
+    item.description.toLowerCase().includes(value.toLowerCase())
+  );
 
   return (
     <div className="wrapper">
@@ -33,8 +39,10 @@ const OurCoffe = () => {
         an. Last ask him cold feel met spot shy want. Children me laughing we
         prospect answered followed. At it went is song that held help face.
       </MainOurCoffe>
-      <FilterPanel type={type} filterCoffe={filterCoffe} />
-      <AllCoffe type={type} />
+      <FilterPanel type={type} filterCoffe={filterCoffe} setValue={setValue} />
+      <AllCoffe
+        filterNameOfCoffe={filterNameOfCoffe ? filterNameOfCoffe : type}
+      />
       <Footer />
     </div>
   );

@@ -26,7 +26,7 @@ export const otherCoffe = [
     price: '6.99$',
     priceLg: 'Price: 6.99$',
     link: 'kenyaStrong',
-    description: 'AROMISTICO Coffee 1 kg',
+    description: 'Solimo Coffee 1 kg',
   },
   {
     image: '../assets/images/aramisto.png',
@@ -37,7 +37,7 @@ export const otherCoffe = [
     price: '26.99$',
     priceLg: 'Price: 26.99$',
     link: 'columbiaSoft',
-    description: 'AROMISTICO Coffee 1 kg',
+    description: 'Presto Coffee 1 kg',
   },
   {
     image: '../assets/images/aramisto.png',
@@ -48,7 +48,7 @@ export const otherCoffe = [
     price: '6.99$',
     priceLg: 'Price: 6.99$',
     link: 'columbiaStrong',
-    description: 'AROMISTICO Coffee 1 kg',
+    description: 'Presto Coffee 1 kg',
   },
   {
     image: '../assets/images/aramisto.png',
@@ -59,7 +59,7 @@ export const otherCoffe = [
     price: '16.99$',
     priceLg: 'Price: 16.99$',
     link: 'kenyaSoft',
-    description: 'AROMISTICO Coffee 1 kg',
+    description: 'Solimo Coffee 1 kg',
   },
   {
     image: '../assets/images/aramisto.png',

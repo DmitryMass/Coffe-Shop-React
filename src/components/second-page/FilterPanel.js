@@ -4,13 +4,7 @@ import React from 'react';
 import './filterPanel.scss';
 //
 
-const FilterPanel = ({ filterCoffe }) => {
-  // const [value, setValue] = useState('');
-
-  // const filterNameOfCoffe = type.filter((item) =>
-  //   item.description.toLowerCase().includes(value.toLowerCase())
-  // );
-
+const FilterPanel = ({ setValue, filterCoffe }) => {
   return (
     <div className="filter">
       <div className="container__content">
@@ -21,11 +15,13 @@ const FilterPanel = ({ filterCoffe }) => {
               className="filter__input"
               type="text"
               placeholder="start typing here..."
-              // onChange={(e) => setValue(e.target.value)}
+              // Search Panel
+              onChange={(e) => setValue(e.target.value)}
             />
           </div>
           <div className="filter__btn">
             <p className="filter__hint">Or filter</p>
+            {/* Filter btn */}
             <span
               onClick={() => filterCoffe('all')}
               id="all"

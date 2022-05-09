@@ -7,11 +7,11 @@ import './second-page/OtherCoffe.scss';
 //
 //
 
-const AllCoffe = ({ type }) => {
+const AllCoffe = ({ filterNameOfCoffe }) => {
   return (
     <section className="section__allCoffe">
       <div className="container__content flex__allCoffe">
-        {type.map((eachCoffe) => {
+        {filterNameOfCoffe.map((eachCoffe) => {
           return (
             <Link
               to={eachCoffe.link}

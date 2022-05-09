@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/ourcoffe" element={<OurCoffe />} />
-        <Route path="/yourpleasure" element={<MyPleasure />} />
         <Route path=":bestCoffe" element={<CoffeItem />} />
+        <Route path="/ourcoffe" element={<OurCoffe />} />
         <Route path="/ourcoffe/:allCoffe" element={<OtherCoffe />} />
+        <Route path="/yourpleasure" element={<MyPleasure />} />
         <Route path="/yourpleasure/:allCoffe" element={<OtherCoffe />} />
       </Routes>
     </BrowserRouter>
