@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { otherCoffe } from './OtherData';
 
 //
 import './second-page/OtherCoffe.scss';
