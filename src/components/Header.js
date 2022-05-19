@@ -7,6 +7,14 @@ import coffeBeansWhite from '../assets/images/coffeBeansWhite.png';
 import { Link } from 'react-router-dom';
 import HeaderMenu from './MenuHeader';
 
+//
+// svg
+// import test from '../assets/icons/test.svg';
+// Need loader for this
+// Так Же заходя в Любой сцсс\цсс файл, нельзя сделать
+// background-img: url(....) не находит файл или просит тоже загрузчик
+//
+
 const headerBgc = {
   backgroundImage: 'url(../assets/images/mainBg.png)',
   backgroundRepeat: 'no-repeat',
@@ -19,6 +27,8 @@ const Header = () => {
     <header className="header" style={headerBgc}>
       <div className="container__header">
         <HeaderMenu />
+        {/* Need Loader for SVG */}
+        {/* <object data={test} type=""></object> */}
         <div className="header__main">
           <h1 className="h1">Everything You Love About Coffee</h1>
           <img src={coffeBeansWhite} alt="Coffe beans white" />
